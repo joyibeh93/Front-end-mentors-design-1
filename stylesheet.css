@@ -13,12 +13,26 @@ body {
 
 
 /*******************************************
+RESUABLE CODE
+*******************************************/
+
+.vr-img-txt .big-text,
+.creative p {
+    text-transform: uppercase;
+    font-size: 180%;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: hsl(0, 0%, 0%);
+}
+
+
+/*******************************************
 STYLING THE HEADER
 *******************************************/
 
 header {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     background-image: linear-gradient( rgba(0, 0, 0, 0.666), rgba(0, 0, 0, 0.666)), url(./images/image-hero.jpg);
     background-position: center;
     background-size: cover;
@@ -65,22 +79,90 @@ ul li a {
 
 .header-experience {
     border: 1px solid hsl(0, 0%, 100%);
-    width: 500px;
+    width: 410px;
     height: 250px;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 .header-experience h1 {
     color: hsl(0, 0%, 100%);
-    padding: 10px;
     letter-spacing: 3px;
-    width: 350px;
+    width: 330px;
     line-height: 1.5;
     font-size: 200%;
-    margin-left: 10px;
+    margin-left: 40px;
     font-weight: lighter;
+    letter-spacing: 5px;
 }
 
 h1 span {
-    word-break: 5px;
+    word-spacing: 5px;
+}
+
+
+/*******************************************
+STYLING THE VR SECTION
+*******************************************/
+
+.interactive-vr {
+    margin-top: 8%;
+}
+
+.vr-image {
+    width: 60%;
+    position: relative;
+}
+
+.vr-img-txt {
+    width: 35%;
+    height: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 125%;
+    left: 46%;
+    padding-top: 30px;
+}
+
+.vr-img-txt .big-text {
+    margin-top: 20px;
+    margin-left: 60px;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    padding: 25px 0 0 25px;
+}
+
+.vr-img-txt .small-text {
+    color: hsl(0, 0%, 41%);
+    font-size: 50%;
+    margin-top: 50px;
+    font-weight: 600;
+    line-height: 2em;
+    padding-left: 25px;
+    word-spacing: 3px;
+    margin-left: 60px;
+}
+
+
+/*******************************************
+STYLING THE CREATIVE SECTION
+*******************************************/
+
+.creative {
+    margin-top: 10%;
+    display: flex;
+}
+
+.creative button {
+    margin-left: 55%;
+    font-size: small;
+    text-transform: uppercase;
+    width: 120px;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 0%);
+    font-weight: 400;
+}
+
+.creative button:hover {
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
 }
