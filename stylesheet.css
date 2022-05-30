@@ -165,4 +165,38 @@ STYLING THE CREATIVE SECTION
 .creative button:hover {
     background-color: hsl(0, 0%, 0%);
     color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+
+/* the mage gallery */
+
+.img-gallery {
+    position: relative;
+    background-color: linear-gradient( rgba(0, 0, 0, 0.501), rgba(0, 0, 0, 0.501));
+}
+
+.img-gallery-text {
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
+
+.img-gallery-text p {
+    text-transform: uppercase;
+    color: hsl(0, 0%, 100%);
+    width: 100px;
+    font-weight: 200;
+}
+
+.img-gallery:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.img-gallery-text:hover p:hover {
+    opacity: 0.5;
+    color: hsl(0, 0%, 0%);
+    cursor: pointer;
+    font-weight: bold;
 }
